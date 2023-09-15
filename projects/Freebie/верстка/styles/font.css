@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Homemade-Regular";
+    src: url("../fonts/Homemade_Apple/HomemadeApple-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Gilroy-Light";
+    src: url("../fonts/Gilroy-FREE/Gilroy-Light.otf");
+}
+
+@font-face {
+    font-family: "Gilroy-Extrabold";
+    src: url("../fonts/Gilroy-FREE/Gilroy-ExtraBold.otf");
+}
