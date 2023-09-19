@@ -1,0 +1,49 @@
+@import url(./font.css);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+h1 {
+    font-family: "YesevaOne", sans-serif;
+    font-size: 40px;
+    color: #fff;
+}
+
+h2 {
+    font-family: "YesevaOne", sans-serif;
+    font-size: 27px;
+    color: #E3B873;
+}
+
+h3 {
+    font-family: "YesevaOne", sans-serif;
+    font-size: 20px;
+}
+
+h4 {
+    font-family: "YesevaOne", sans-serif;
+    font-size: 18px;
+}
+
+p {
+    font-family: "Nunito-regular", sans-serif;
+}
+
+button {
+    min-height: 53px;
+    background-color: #E3B873;
+    font-family: "Nunito-regular", sans-serif;
+    font-size: 13px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
