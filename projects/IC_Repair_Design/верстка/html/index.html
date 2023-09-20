@@ -3,6 +3,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/general-styles.css">
+    <link rel="stylesheet" href="../styles/mobile-styles.css">
     <title>IC Repair Design</title>
 </head>
 <body>
@@ -24,14 +26,19 @@
     <main class="main">
         <section class="hero">
             <div class="hero__info">
-                <h1 class="hero__heading"></h1>
-                <p class="hero__text"></p>
-                <button type="button" class="hero__btn hero__btn_first"></button>
-                <button type="button" class="hero__btn hero__btn_second"></button>
+                <h1 class="hero__heading">Turnkey Repair in the 
+                    city of <span class="hero__heading_color">Rostov-on-Don</span></h1>
+                <p class="hero__text">Get ready-made turnkey repairs on time
+                    with work time saving up to 45 days and 20% from
+                    cost of materials due to the organization of work</p>
+            </div>
+            <div class="hero__btns">
+                <button type="button" class="hero__btn hero__btn_first">CALCULATE THE COST</button>
+                <button type="button" class="hero__btn hero__btn_second">SUBMIT YOUR APPLICATION</button>
             </div>
         </section>
         <section class="worksBlock">
-            <div class="worksBlock__info">
+            <!-- <div class="worksBlock__info">
                 <h2 class="worksBlock__heading">Completed projects</h2>
                 <p class="worksBlock__text">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
                 <table class="worksBlock__table">
@@ -55,9 +62,9 @@
                 <div class="worksBlock__slider-nav">
                     <div class="worksBlock__arrow-left"></div>
                     <div class="worksBlock__dots">
-                        <div class="worksBlock__dot">Rostov-on-Don, Admiral</div>
-                        <div class="worksBlock__dot">Sochi Thieves</div>
-                        <div class="worksBlock__dot">Rostov-on-Don Patriotic</div>
+                        <div class="worksBlock__dot"></div>
+                        <div class="worksBlock__dot"></div>
+                        <div class="worksBlock__dot"></div>
                     </div>
                     <div class="worksBlock__arrow-right"></div>
                 </div>
@@ -65,13 +72,62 @@
             <div class="worksBlock__content">
                 <nav class="worksBlock__nav">
                     <ul class="worksBlock__list">
-                        <li class="worksBlock__item"></li>
-                        <li class="worksBlock__item"></li>
-                        <li class="worksBlock__item"></li>
+                        <li class="worksBlock__item">Rostov-on-Don, Admiral</li>
+                        <li class="worksBlock__item">Sochi Thieves</li>
+                        <li class="worksBlock__item">Rostov-on-Don Patriotic</li>
                     </ul>
                 </nav>
                 <div class="worksBlock__slider-content">
                     <img src="../images/completedWorks/completed-works_general/completedWorks-img.png" alt="completed works" class="worksBlock__slider-img">
+                </div>
+            </div> -->
+            <div class="worksBlock__info">
+                <h2 class="worksBlock__heading">Completed projects</h2>
+                <p class="worksBlock__text">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
+            </div>
+            <div class="worksBlock__table">
+                <table class="worksBlock__table">
+                    <col class="worksBlock__col1">
+                    <col class="worksBlock__col2">
+                    <tr class="worksBlock__table-row">
+                        <th class="worksBlock__table-head">city</th>
+                        <th class="worksBlock__table-head">apartment area</th>
+                    </tr>
+                    <tr class="worksBlock__table-row">
+                        <td class="worksBlock__table-data">Rostov-on-Don LCD admiral</td>
+                        <td class="worksBlock__table-data">81 m2</td>
+                    </tr>
+                    <tr class="worksBlock__table-row">
+                        <th class="worksBlock__table-head">repair time</th>
+                        <th class="worksBlock__table-head">repair cost</th>
+                    </tr>
+                    <tr class="worksBlock__table-row">
+                        <td class="worksBlock__table-data">3.5 months</td>
+                        <td class="worksBlock__table-data">Upon request</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="worksBlock__sliderArea">
+                <div class="worksBlock__slider-nav">
+                    <div class="worksBlock__arrow-left"></div>
+                    <div class="worksBlock__dots">
+                        <div class="worksBlock__dot"></div>
+                        <div class="worksBlock__dot"></div>
+                        <div class="worksBlock__dot"></div>
+                    </div>
+                    <div class="worksBlock__arrow-right"></div>
+                </div>
+            </div>
+            <div class="worksBlock__content">
+                <nav class="worksBlock__nav">
+                    <ul class="worksBlock__list">
+                        <li class="worksBlock__item">Rostov-on-Don, Admiral</li>
+                        <li class="worksBlock__item">Sochi Thieves</li>
+                        <li class="worksBlock__item">Rostov-on-Don Patriotic</li>
+                    </ul>
+                </nav>
+                <div class="worksBlock__slider-content">
+                    <!-- <img src="../images/completedWorks/completed-works_general/completedWorks-img.png" alt="completed works" class="worksBlock__slider-img"> -->
                 </div>
             </div>
         </section>
@@ -86,22 +142,22 @@
                 <div class="controlBlock__video"></div>
                 <div class="controlBlock__play-btn"></div>
             </div>
-            <div class="controlBlock__stroke"></div>
+            <!-- <div class="controlBlock__stroke"></div> -->
             <p class="controlBlock__text">At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities!
                 Leave a request below and you will receive a link to the broadcast.</p>
             <div class="controlBlock__inputsBlock">
                 <div class="controlBlock__inputName">
                     <label for="name">Name</label>
-                    <input type="text" id="name" value="What is your name:">
+                    <input class="inputText controlBlock__inputText" type="text" id="name" value="What is your name:">
                 </div>
                 <div class="controlBlock__inputPhone">
                     <label for="phone">Phone</label>
-                    <input type="text" id="phone" value="Your phone number:">
+                    <input class="inputText controlBlock__inputText" type="text" id="phone" value="Your phone number:">
                 </div>
-                <button type="button" class="controlBlock__btn">Submit</button>
             </div>
-            <div class="controlBlock__dataCheck">
-                <input type="checkbox" class="controlBlock__checkbox" value="">I agree to the processing of personal data
+            <button type="button" class="controlBlock__btn">Submit</button>
+            <div class="dataCheck controlBlock__dataCheck">
+                <input type="checkbox" class="checkbox controlBlock__checkbox" value="">I agree to the processing of personal data
             </div>
         </section>
         <section class="typesBlock">
@@ -125,8 +181,8 @@
                             <li class="typesBlock__listItem">Replacing sockets and switches</li>
                             <li class="typesBlock__listItem">Replacing doors</li>
                         </ul>
+                        <div class="typesBlock__summary">from 900 rub / m2</div>
                     </div>
-                    <div class="typesBlock__summary">from 900 rub / m2</div>
                 </div>
                 <div class="typesBlock__item">
                     <div class="typesBlock__img"></div>
@@ -141,8 +197,8 @@
                             <li class="typesBlock__listItem">Replacing sockets and switches</li>
                             <li class="typesBlock__listItem">Replacing doors</li>
                         </ul>
+                        <div class="typesBlock__summary">from 1800 rub / m2</div>
                     </div>
-                    <div class="typesBlock__summary">from 1800 rub / m2</div>
                 </div>
                 <div class="typesBlock__item">
                     <div class="typesBlock__img"></div>
@@ -157,8 +213,8 @@
                             <li class="typesBlock__listItem">Replacing sockets and switches</li>
                             <li class="typesBlock__listItem">Replacing doors</li>
                         </ul>
+                        <div class="typesBlock__summary">from 4000 rub / m2</div>
                     </div>
-                    <div class="typesBlock__summary">from 4000 rub / m2</div>
                 </div>
             </div>
     
@@ -195,8 +251,8 @@
                     <label for="email" class="requestBlock__label">Email</label>
                     <input type="text" class="requestBlock__input" id="email" value="Your email">
                 </div>
-                <div class="requestBlock__dataCheck">
-                    <input type="checkbox" class="requestBlock__checkbox" value="">I agree to the processing of personal data
+                <div class="dataCheck requestBlock__dataCheck">
+                    <input type="checkbox" class="checkbox requestBlock__checkbox" value="">I agree to the processing of personal data
                 </div>
                 <button class="requestBlock__btn">Call the measurer</button>
             </div>
@@ -398,19 +454,20 @@
             <h3 class="questionBlock__heading">have any questions?</h3>
             <div class="questionBlock__inputsArea">
                 <label for="name" class="questionBlock__label">Name</label>
-                <input type="text" id="name" class="questionBlock__input" value="What is your name:">
+                <input class="inputText questionBlock__inputText" type="text" id="name" class="questionBlock__input" value="What is your name:">
                 <label for="phone" class="questionBlock__label">Phone</label>
-                <input type="text" id="phone" class="questionBlock__input" value="Your phone number:">
+                <input class="inputText questionBlock__inputText" type="text" id="phone" class="questionBlock__input" value="Your phone number:">
                 <label for="question" class="questionBlock__label">Question</label>
-                <input type="text" id="question" class="questionBlock__input" value="I want to know:">
+                <input class="inputText questionBlock__inputText" type="text" id="question" class="questionBlock__input" value="I want to know:">
             </div>
-            <div class="questionBlock__dataCheck">
-                <input type="checkbox" class="questionBlock__checkbox" value="">I agree to the processing of personal data
+            <div class="dataCheck questionBlock__dataCheck">
+                <input type="checkbox" class="checkbox questionBlock__checkbox" value="">I agree to the processing of personal data
             </div>
             <button class="questionBlock__btn">submit</button>
         </section>
         <section class="mapBlock">
-            <h3 class="mapBlock__heading"></h3>
+            <h3 class="mapBlock__heading">Rostov-on-Don, Nansen St., 239 Shopping Center
+                Decorum Tel +7 (928) 768 32 29</h3>
             <div class="mapBlock__socialIcons">
                 <div class="mapBlock__mailIcon">
                     <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -426,7 +483,7 @@
                 </div>
             </div>
             <div class="mapBlock__map-container">
-                <img src="../images/mapBlock/mapBlock_general/mapBlockGeneral-map-img.png" alt="map">
+                <!-- <img src="../images/mapBlock/mapBlock_general/mapBlockGeneral-map-img.png" alt="map"> -->
             </div>
         </section>
     </main>
