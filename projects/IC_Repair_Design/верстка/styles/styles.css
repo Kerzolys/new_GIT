@@ -1,81 +1,6 @@
 @import url(./font.css);
-@media screen and (min-width: 320px) and (max-width: 767px) {
-    @import url(./mobile-styles.css);
-
-    body {
-        margin: 0 auto;
-        max-width: 767px;
-        font-weight: 400;
-    }
-    
-    h1 {
-        font-size: 23px;
-    }
-    
-    h2 {
-        font-size: 22px;
-    }
-    
-    h3 {
-        font-size: 20px;
-    }
-    
-    h4 {
-        font-size: 15px;
-    }
-    
-    button {
-        min-height: 51px;
-        min-width: 340px;
-        font-size: 15px;
-        cursor: pointer;
-    }
-
-    .typesBlock__summary {
-        line-height: 20.79px;
-        font-size: 15px;
-    }
-
-    .clients {
-        display: none;
-    }
-
-
-    .requesBlock {
-        display: none;
-    }
-
-}
-
-@media screen and (min-width: 768px) and (max-width: 1440px) {
-    @import url(./general-styles.css);
-
-    body {
-        margin: 0 auto;
-        max-width: 1440px;
-    }
-    
-    h1 {
-        font-size: 40px;
-    }
-    
-    h2 {
-        font-size: 27px;
-    }
-    
-    h3 {
-        font-size: 20px;
-    }
-    
-    h4 {
-        font-size: 18px;
-    }
-    
-    button {
-        min-height: 53px;
-        font-size: 13px;
-    }
-}
+@import url(./mobile/mobile-styles.css) screen and (min-width: 320px) and (max-width: 767px);
+@import url(./desktop/desktop-styles.css) screen and (min-width: 1024px) and (max-width: 2500px);
 
 * {
     box-sizing: border-box;
@@ -84,10 +9,9 @@
     text-decoration: none;
 }
 
-/* body {
-    margin: 0 auto;
-    max-width: 1440px;
-} */
+h1,h2,h3,h4 {
+    text-transform: uppercase;
+}
 
 h1 {
     font-family: "YesevaOne", sans-serif;
@@ -120,15 +44,27 @@ button {
     cursor: pointer;
 }
 
-input,
-.dataCheck {
+.worksBlock__table th {
+    font-family: "YesevaOne", sans-serif;
+    color: #E3B873;
+    text-align: start;
+    vertical-align: top;
+    text-transform: uppercase;
+}
+
+.worksBlock__table td{
+    font-family: "NunitoSans", sans-serif;
     color: #FFFFFF;
+    text-align: start;
+    vertical-align: top;
 }
 
 .inputText,
-.dataCheck {
+.checkboxLabel {
+    color: #FFFFFF;
     font-size: 14px;
     font-family: "NunitoSans", sans-serif;
+    line-height: 22.92px;
 }
 
 .inputText {
@@ -145,8 +81,39 @@ label {
     margin-bottom: 7px;
 }
 
+.dataCheck label{
+    display: inline-flex;
+    gap: 8.62px;
+    align-items: baseline;
+}
+
 .checkbox {
-    margin-right: 8.62px;
+    display: none;
+}
+
+.checkboxLabel {
+    cursor: pointer;
+}
+
+.checkbox_fake {
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    border-radius: 1px;
+    justify-content: center;
+    align-items: center;
+    background-color: #E3B873;
+    color: #FFFFFF;
+}
+
+.checkbox_fake::before {
+    content: "\2714";
+    opacity: 0;
+    transition: .2s;
+}
+
+.checkbox:checked + .checkbox_fake::before {
+    opacity: 1;
 }
 
 .typesBlock__summary {
@@ -156,3 +123,4 @@ label {
     text-transform: uppercase;
     background-color: #E3B873;
 }
+
