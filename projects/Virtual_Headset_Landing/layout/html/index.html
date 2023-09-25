@@ -2,35 +2,254 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
     <title>Virtual Headset</title>
 </head>
 <body>
     <header class="header">
-        <nav class="header__nav">
-            <ul class="header__navList">
-                <li><a href="" class="header__navItem"></a></li>
-                <li><a href="" class="header__navItem"></a></li>
-                <li><a href="" class="header__navItem"></a></li>
-                <li><a href="" class="header__navItem"></a></li>
-            </ul>
-        </nav>
-        <div class="header__logo">
-            <span class="header__logoText"></span>ext
+        <div class="fixed-container">
+            <nav class="header__nav">
+                <ul class="header__navList">
+                    <li><a href="" class="header__navItem">Home</a></li>
+                    <li><a href="" class="header__navItem">Catalog</a></li>
+                    <li><a href="" class="header__navItem">Contact</a></li>
+                    <li><a href="" class="header__navItem">Features</a></li>
+                </ul>
+            </nav>
+            <div class="logo header__logo">
+                <span class="header__logoText">Holo<span class="header__logoText_white">Gaze</span>.</span>
+            </div>
+            <div class="header__search">
+                <label for="search" class="header__label">
+                    <input type="text" class="header__input" value="Search games & products..">
+                    <span class="header__inputIcon">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="9.78614" cy="9.78602" r="8.23951" stroke="#BEAFC3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15.5168 15.9447L18.7472 19.1667" stroke="#BEAFC3" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+                            </svg>
+                    </span>
+                </label>
+            </div>
+            <div class="header__basket">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.4 4.5V4.6H13.5H17.9V15.75C17.9 16.3202 17.6735 16.8671 17.2703 17.2703C16.8671 17.6735 16.3202 17.9 15.75 17.9H2.25C1.67978 17.9 1.13292 17.6735 0.72972 17.2703C0.326517 16.8671 0.1 16.3202 0.1 15.75V4.6H4.5H4.6V4.5C4.6 3.33305 5.06357 2.21389 5.88873 1.38873C6.71389 0.56357 7.83305 0.1 9 0.1C10.167 0.1 11.2861 0.56357 12.1113 1.38873C12.9364 2.21389 13.4 3.33305 13.4 4.5ZM12 4.6H12.1V4.5C12.1 3.67783 11.7734 2.88933 11.192 2.30797C10.6107 1.72661 9.82217 1.4 9 1.4C8.17783 1.4 7.38933 1.72661 6.80797 2.30797C6.22661 2.88933 5.9 3.67783 5.9 4.5V4.6H6H12ZM1.5 5.9H1.4V6V15.75C1.4 15.9754 1.48955 16.1916 1.64896 16.351C1.80837 16.5104 2.02457 16.6 2.25 16.6H15.75C15.9754 16.6 16.1916 16.5104 16.351 16.351C16.5104 16.1916 16.6 15.9754 16.6 15.75V6V5.9H16.5H13.5H13.4V6V7.4H12.1V6V5.9H12H6H5.9V6V7.4H4.6V6V5.9H4.5H1.5Z" fill="#BEAFC3" stroke="#160524" stroke-width="0.2"/>
+                    </svg>
+            </div>
         </div>
-        <div class="header__search">
-            <label for="search" class="header__label">
-                <input type="text" class="header__input">
-                <span class="header__inputIcon"></span>
-            </label>
-        </div>
-        <div class="header__basket"></div>
     </header>
     <main class="main">
-        <section class="hero"></section>
-        <section class="blogBlock"></section>
-        <section class="galleryBlock"></section>
-        <section class="faqBlock"></section>
+        <section class="hero">
+            <div class="fixed-container">
+                <div class="hero__infoBlock">
+                    <p class="text1 hero__text1">Virtual Headsets</p>
+                    <h1 class="hero__heading">Experience a new dimension of reality</h1>
+                    <p class="text1 hero__description">Step into the future with our virtual headset, come to life right before your eyes</p>
+                    <div class="hero__btnsBlock">
+                        <button class="btn hero__btn">
+                            <div class="hero__btnIcon"></div>
+                            Visit Sttore
+                        </button>
+                        <button class="btn hero__btn">
+                            <div class="hero__btnIcon"></div>
+                            Explore
+                            </button>
+                    </div>
+                    <p class="text3 hero__text3">FOLLOW US</p>
+                    <div class="hero__socialIconsBlock">
+                        <div class="socialIcon hero__socialIcon"></div>
+                        <div class="socialIcon hero__socialIcon"></div>
+                        <div class="socialIcon hero__socialIcon"></div>
+                        <div class="socialIcon hero__socialIcon"></div>
+                    </div>
+                </div>
+                <div class="hero__imgBlock">
+                    <div class="hero__img"></div>
+                    <div class="hero__opportunities">
+                        <div class="hero__education">
+                            <div class="hero__icon"></div>
+                            <p class="hero__text3">Enhanced Education</p>
+                        </div>
+                        <div class="hero__training">
+                            <div class="hero__icon"></div>
+                            <p class="hero__text">Training and Simulation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="headsetBlock">
+            <div class="fixed-container">
+                <div class="headsetBlock__img"></div>
+                <div class="headsetBlock__info">
+                    <h2 class="headsetBlock__heading">Our Virtual Headsets 
+                        Shine with Unique 
+                        Features!</h2>
+                    <div class="headsetBlock__listArea">
+                        <ul class="headsetBlock__list">
+                            <li class="headsetBlock__item">High-resolution OLED or LCD screens: Provide sharp and clear visuals.</li>
+                            <li class="headsetBlock__item">Inside-out tracking: Built-in sensors (cameras or other sensors).</li>
+                            <li class="headsetBlock__item">High-resolution OLED or LCD screens: Provide sharp and clear visuals.</li>
+                            <li class="headsetBlock__item">Refresh rate: Higher refresh rates reduce motion sickness and provide.</li>
+                            <li class="headsetBlock__item">Eye tracking: Monitors the movement of the user's eyes, allowing for more.</li>
+                            <li class="headsetBlock__item">Refresh rate: Higher refresh rates reduce motion sickness and provide.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="blogBlock">
+            <div class="fixed-container">
+                <div class="blog__info">
+                    <h2 class="blog__heading">Jane Wilson, 
+                        Gaming Creator</h2>
+                    <p class="text2 blogBlock__text">A virtual headset creator is an individual or company that specializes in designing and manufacturing virtual reality headsets, also known as VR headsets.</p>
+                    <button class="btn blog__btn">Read my blog</button>
+                    <div class="blog__followersBlock">
+                        <div class="blog__followersIcons">
+                            <img src="../images/blogBlock/blogBlock_desktop/blogBlock__follower1_desktop.png" alt="follower" class="gallery__follower">
+                            <img src="../images/blogBlock/blogBlock_desktop/blogBlock__follower2_desktop.png" alt="follower" class="gallery__follower">
+                            <img src="../images/blogBlock/blogBlock_desktop/blogBlock__follower3_desktop.png" alt="follower" class="gallery__follower">
+                            <img src="../images/blogBlock/blogBlock_desktop/blogBlock__follower4_desktop.png" alt="follower" class="gallery__follower">
+                            <img src="../images/blogBlock/blogBlock_desktop/blogBlock__follower5_desktop.png" alt="follower" class="gallery__follower">
+                        </div>
+                        <span class="blog__counter">+258K Views</span>
+                    </div>
+                </div>
+                <div class="blogBlock__contentBlock">
+                    <img src="../images/blogBlock/blogBlock_desktop/blogBlock__img_desktop.png" alt="creator image" class="blogBlock__img">
+                    <div class="blogBlock__twitter"></div>
+                </div>
+            </div>
+        </section>
+        <div class="gallery">
+            <div class="fixed-container">
+                <div class="gallery__info">
+                    <h2 class="gallery__heading">Top Games</h2>
+                    <p class="text1 gallery__text">If you buy video 2 games, you will receive 1 video game for free, along with a 50% discount.</p>
+                    <div class="gallery__nav"></div>
+                </div>
+                <div class="gallery__content">
+                    <div class="gallery__item">
+                        <img src="../images/galleryBlock/galleryBlock_desktop/galleryBlock__game1_desktop.png" alt="game" class="gallery__img">
+                        <h3 class="gallery__gameName">Horizon : Call of the mountain</h3>
+                    </div>
+                    <div class="gallery__item">
+                        <img src="../images/galleryBlock/galleryBlock_desktop/galleryBlock__game2_desktop.png" alt="game" class="gallery__img">
+                        <h3 class="gallery__gameName">Half - Life : ALYX</h3>
+                    </div>
+                    <div class="gallery__item">
+                        <img src="../images/galleryBlock/galleryBlock_desktop/galleryBlock__game3_desktop.png" alt="game" class="gallery__img">
+                        <h3 class="gallery__gameName">Fight Night Champion</h3>
+                    </div>
+                    <div class="gallery__item">
+                        <img src="../images/galleryBlock/galleryBlock_desktop/galleryBlock__game4_desktop.png" alt="game" class="gallery__img">
+                        <h3 class="gallery__gameName">Call of Duty : Coold War</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="faqBlock">
+            <div class="fixed-container">
+                <h2 class="faqBlock__heading">F.A.Q.</h2>
+                <div class="faqBlock__questionsBlock">
+                    <div class="faqBlock__item">
+                        <div class="faqBlock__question">
+                            <h4>What are the different types of virtual headsets available?</h4>
+                            <div class="faqBlock__arrow"></div>
+                        </div>
+                        <p class="text2 faqBlock__text">Virtual headsets are equipped with various sensors to track the user's movements. These sensors can include accelerometers, gyroscopes, and sometimes external cameras or base stations. They constantly monitor the position and orientation of the headset and sometimes the user's hand controllers.
+                        The headset has one or two high-resolution displays, one for each eye, positioned in front of the user's eyes. These displays show stereoscopic 3D images, creating a sense of depth and immersion. Between the displays and the user's eyes, help focus the images and adjust them for the user's field of view.</p>
+                    </div>
+                    <div class="faqBlock__item">
+                        <div class="faqBlock__question">
+                            <h4>How does a virtual headset work?</h4>
+                            <div class="faqBlock__arrow"></div>
+                        </div>
+                        <p class="text2 faqBlock__text">Virtual headsets are equipped with various sensors to track the user's movements. These sensors can include accelerometers, gyroscopes, and sometimes external cameras or base stations. They constantly monitor the position and orientation of the headset and sometimes the user's hand controllers.
+                        The headset has one or two high-resolution displays, one for each eye, positioned in front of the user's eyes. These displays show stereoscopic 3D images, creating a sense of depth and immersion. Between the displays and the user's eyes, help focus the images and adjust them for the user's field of view.</p>
+                    </div>
+                    <div class="faqBlock__item">
+                        <div class="faqBlock__question">
+                            <h4>Do I need a powerful computer to use a virtual headset?</h4>
+                            <div class="faqBlock__arrow"></div>
+                        </div>
+                        <p class="text2 faqBlock__text">Virtual headsets are equipped with various sensors to track the user's movements. These sensors can include accelerometers, gyroscopes, and sometimes external cameras or base stations. They constantly monitor the position and orientation of the headset and sometimes the user's hand controllers.
+                        The headset has one or two high-resolution displays, one for each eye, positioned in front of the user's eyes. These displays show stereoscopic 3D images, creating a sense of depth and immersion. Between the displays and the user's eyes, help focus the images and adjust them for the user's field of view.</p>
+                    </div>
+                    <div class="faqBlock__item">
+                        <div class="faqBlock__question">
+                            <h4>What are the main applications of virtual headsets?</h4>
+                            <div class="faqBlock__arrow"></div>
+                        </div>
+                        <p class="text2 faqBlock__text">Virtual headsets are equipped with various sensors to track the user's movements. These sensors can include accelerometers, gyroscopes, and sometimes external cameras or base stations. They constantly monitor the position and orientation of the headset and sometimes the user's hand controllers.
+                        The headset has one or two high-resolution displays, one for each eye, positioned in front of the user's eyes. These displays show stereoscopic 3D images, creating a sense of depth and immersion. Between the displays and the user's eyes, help focus the images and adjust them for the user's field of view.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <div class="fixed-container">
+            <div class="footer__mainContainer">
+                <div class="footer__contacts">
+                    <div class="logo footer__logo">
+                        <span class="footer__logoText">Holo<span class="footer__logoText_white">Gaze</span>.</span>
+                    </div>
+                    <div class="socialIcon footer__socialIconsBlock">
+                        <div class="socialIcon footer__socialIcon"></div>
+                        <div class="socialIcon footer__socialIcon"></div>
+                        <div class="socialIcon footer__socialIcon"></div>
+                        <div class="socialIcon footer__socialIcon"></div>
+                    </div>
+                    <span class="footer__phone"></span>
+                </div>
+                <div class="footer__menu">
+                    <h4 class="footer__menuHeading"></h4>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                            <a href="#"></a>
+                            </li>
+                            <li class="footer__item">
+                            <a href="#"></a>
+                            </li>
+                            <li class="footer__item">
+                            <a href="#"></a>
+                            </li>
+                            <li class="footer__item">
+                            <a href="#"></a>
+                            </li>
+                        </ul>
+                </div>
+                <div class="footer__company">
+                    <h4 class="footer__heading"></h4>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                        <a href="#">Login</a>
+                        </li>
+                        <li class="footer__item">
+                        <a href="#">Sign Up</a>
+                        </li>
+                        <li class="footer__item">
+                        <a href="#">Privacy</a>
+                        </li>
+                        <li class="footer__item">
+                        <a href="#">Products</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__email">
+                    <h4 class="footer__heading">Subscribe Our News Letter</h4>
+                    <p class="text1 footer__text">Sure, please provide your email address to subscribe to newsletter</p>
+                    <label for="email" class="footer__label">
+                        <input type="email" class="footer__input" id="email" value="Enter your mail...">
+                        <input type="button" class="footer__btn">Subscribe
+                    </label>
+                </div>    
+            </div>
+            <div class="footer__companyName">
+                <p class="text1 footer__text">© 2023 Your Company Name. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
