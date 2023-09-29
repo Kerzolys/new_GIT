@@ -1,0 +1,64 @@
+.realizeBlock {
+    min-height: 211px;
+    padding-left: 4.78vw;
+    padding-right: 4.53vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.realizeBlock__heading {
+    text-align: center;
+    line-height: 30.49px;
+    max-width: 90.66vw;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.realizeBlock__list {
+    display: none;
+}
+
+.realizeBlock__content {
+    background: url(../../images/realizeBlock/realizeBlock_mobile/realizeBlockMobile-img.png);
+    background-size: cover;
+    min-width: 90.66vw;
+    min-height: 242px;
+    position: relative;
+    position: absolute;
+    bottom: -121px;
+}
+
+.realizeBlock__content:hover::before {
+    content: url(../../images/completedWorks/completedWorks_mobile/worksBlockMobile-arrow-img.svg);
+    position: absolute;
+    top: 103px;
+    left: 14px;
+    background-color: #E3B873;
+    border-radius: 50%;
+    min-width: 36px;
+    min-height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: .7;
+}
+
+.realizeBlock__content:hover::after {
+    content: url(../../images/completedWorks/completedWorks_mobile/worksBlockMobile-arrow-img.svg);
+    position: absolute;
+    top: 103px;
+    right: 14px;
+    background-color: #E3B873;
+    border-radius: 50%;
+    min-width: 36px;
+    min-height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(180deg);
+    cursor: pointer;
+    opacity: .7;
+}

@@ -1,0 +1,38 @@
+.header {
+    min-height: 57px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 4.8vw;
+    padding-right: 4.8vw;
+    background-color: #252525;
+    font-family: "NunitoSans", sans-serif;
+    line-height: 15px;
+}
+
+.header__logo,
+.header__phone {
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.header__logo:hover,
+.header__phone:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.header__logo {
+    color: #E3B873;
+    text-transform: uppercase;
+}
+
+.header__phone {
+    color: #FFFFFF;
+}
+
+.header__nav,
+.header__btn {
+    display: none;
+}
+

@@ -1,0 +1,59 @@
+.header {
+    min-height: 83px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 6.38vw;
+    padding-right: 6.25vw;
+    background-color: #252525;
+    font-size: 11px;
+    line-height: 15px;
+    font-family: "NunitoSans", sans-serif;
+    text-transform: uppercase;
+}
+
+.header__logo,
+.header__phone {
+    cursor: pointer;
+    color: #E3B873;
+}
+
+.header__logo:hover,
+.header__phone:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.header__nav {
+    margin-left: 6.62vw;
+    margin-right: 4.67vw;
+}
+
+.header__list{
+    display: flex;
+    gap: 3.32vw;
+}
+
+.header__a {
+    color: #FFFFFF;
+}
+
+.header__a:hover {
+    color: #E3B873;
+    transition: 300ms;
+}
+
+.header__btn {
+    min-width: 161px;
+    min-height: 37px;
+    font-family: "NunitoItalic", sans-serif;
+    font-size: 11px;
+    line-height: 15px;
+    margin-left: 5.41vw;
+}
+
+.header__btn:hover {
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    transition: 300ms;
+}

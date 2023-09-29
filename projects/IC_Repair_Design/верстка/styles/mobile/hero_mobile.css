@@ -1,0 +1,63 @@
+.hero {
+    position: relative;
+    min-height: 476px;
+    padding: 85px 4.8vw 61px 4.8vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(../../images/hero/hero_mobile/heroMobile-img.png);
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 476px;
+    min-width: 100%;
+    background-color: #000000;
+    opacity: .7;
+}
+
+.hero__info {
+    margin-bottom: 32px;
+    color: #FFFFFF;
+    z-index: 1;
+}
+
+.hero__heading {
+    margin-bottom: 0.7em;
+    min-width: 339px;
+    line-height: 30.55px;
+    text-transform: uppercase;
+}
+
+.hero__heading_color {
+    color: #E3B873;
+
+}
+
+.hero__text {
+    line-height: 19.02px;
+}
+
+.hero__btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 26px;
+    z-index: 1;
+}
+
+.hero__btn {
+    font-family: "NunitoItalic", sans-serif;
+    font-size: 11px;
+    line-height: 15px;
+    min-width: 338px;
+}
+
+.hero__btn:hover {
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    transition: 300ms;
+}

@@ -1,0 +1,117 @@
+.typesBlock {
+    min-height: 706px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 7.15vw;
+    padding-right: 7.01vw;
+}
+
+.typesBlock__heading {
+    line-height: 27.72px;
+    margin-bottom: 13px;
+}
+
+.typesBlock__icon {
+    margin-bottom: 31px;
+    position: relative;
+}
+
+.typesBlock__icon::before {
+    content: "";
+    position: absolute;
+    min-width: 32px;
+    height: 1.54px;
+    background-color: #E3B873;
+    top: 47.24%;
+    left: -2.84vw;
+}
+
+.typesBlock__icon::after {
+    content: "";
+    position: absolute;
+    min-width: 32px;
+    height: 1.54px;
+    background-color: #E3B873;
+    top: 47.24%;
+    right: -2.84vw;
+}
+
+.typesBlock__cards {
+    display: flex;
+    gap: 2.08vw;
+    margin-bottom: 311px;
+}
+
+.typesBlock__item {
+    min-height: 608px;
+    min-width: 27.2vw;
+}
+
+.typesBlock__info {
+    margin-top: 294px;
+    margin-left: 32px;
+    background-color: #fff;
+    box-shadow: 10px 10px 20px #00000008;
+    position: relative;
+    height: 286px;
+    width: 330px;
+    padding-top: 25px;
+    padding-bottom: 49px;
+    padding-left: 34px;
+}
+
+.typesBlock__infoHeading{
+    text-transform: none;
+    margin-bottom: 13px;
+    line-height: 24.95px;
+    /* margin-left: 31px; */
+}
+
+.typesBlock__list {
+    font-family: "NunitoSans", sans-serif;
+    min-width: 227px;
+    font-size: 13px;
+    line-height: 26.6px;
+    color: #959595;
+    margin-left: 14.5px;
+}
+
+.typesBlock__summary {
+    min-width: 228px;
+    min-height: 54px;
+    display: inline-block;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    font-size: 18px;
+    line-height: 24.95px;
+    position: absolute;
+    top: 260px;
+    right: 102px;
+}
+
+.typesBlock__item:first-child,
+.typesBlock__item:nth-child(2n+2),
+.typesBlock__item:last-child {
+    background-size: cover;
+    min-height: 421px;
+}
+
+.typesBlock__item:first-child {
+    background: url(../../images/typesBlock/typesBlock_desktop/typesBlockDesktop-img1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.typesBlock__item:nth-child(2n+2) {
+    background: url(../../images/typesBlock/typesBlock_mobile/typesBlockMobile-img2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.typesBlock__item:last-child {
+    background: url(../../images/typesBlock/typesBlock_mobile/typesBlockMobile-img3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}

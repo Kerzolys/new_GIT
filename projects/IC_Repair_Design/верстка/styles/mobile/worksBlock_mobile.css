@@ -1,0 +1,113 @@
+.worksBlock {
+    min-height: 670px;
+    background-color: #181818;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 36px 4.8vw 58px 4.8vw;
+}
+
+.worksBlock__heading {
+    line-height: 30.49px;
+    text-align: center;
+    padding-left: 17.26vw;
+    padding-right: 17.26vw;
+    margin-bottom: 22px;
+    text-transform: uppercase;
+}
+
+.worksBlock__text {
+    color: #FFFFFF;
+    font-size: 11px;
+    line-height: 17.43px;
+    text-align: center;
+    padding-left: 8.53vw;
+    padding-right: 8.53vw;
+    min-height: 86px;
+    margin-bottom: 3.27em;
+}
+
+.worksBlock__slider-content {
+    min-width: 90.66vw;
+    min-height: 241.35px;
+    background: url(../../images/worksBlock/worksBlock_mobile/worksBlock-img.png);
+    background-size: 100%;
+    position: relative;
+    margin-bottom: 36.45px;
+}
+
+.worksBlock__slider-content:hover::before {
+    content: url(../../images/worksBlock/worksBlock_mobile/worksBlockMobile-arrow-img.svg);
+    position: absolute;
+    top: 103px;
+    left: 14px;
+    background-color: #E3B873;
+    border-radius: 50%;
+    min-width: 36px;
+    min-height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: .7;
+}
+
+.worksBlock__slider-content:hover::after {
+    content: url(../../images/worksBlock/worksBlock_mobile/worksBlockMobile-arrow-img.svg);
+    position: absolute;
+    top: 103px;
+    right: 14px;
+    background-color: #E3B873;
+    border-radius: 50%;
+    min-width: 36px;
+    min-height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(180deg);
+    cursor: pointer;
+    opacity: .7;
+}
+
+.worksBlock__table {
+    order: 3;
+}
+
+.worksBlock__table th {    line-height: 19.4px;
+    font-size: 14px;
+}
+
+.worksBlock__table td{
+    line-height: 14.94px;
+    font-size: 11px;
+}
+
+.worksBlock__col1 {
+    width: 26.66%;
+}
+
+.worksBlock__table-head:first-child {
+    padding-right: 26.93vw;
+}
+
+.worksBlock__table-row:first-child .worksBlock__table-head {
+    padding-bottom: 0.78em;
+}
+
+.worksBlock__table-data:first-child {
+    padding-right: 5.45em;
+    padding-bottom: 2.45em;
+} 
+
+.worksBlock__table-row:nth-child(2n+3) .worksBlock__table-head {
+    padding-bottom: .92em;
+}
+
+.worksBlock__nav {
+    display: none;
+}
+
+.worksBlock__slider-nav {
+    display: none;
+}

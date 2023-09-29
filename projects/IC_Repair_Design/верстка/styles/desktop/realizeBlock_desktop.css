@@ -1,0 +1,115 @@
+.realizeBlock {
+    /* min-height: 1017.86px; */
+    min-height: 70.625%;
+    padding-top: 112.53px;
+    padding-bottom: 41.33px;
+}
+
+.realizeBlock__container {
+    height: 864px;
+    padding-left: 6.875vw;
+    padding-right: 7.08vw;
+    padding-bottom: 97.53px;
+    padding-top: 137.47px;
+    display: flex;
+    /* gap: 13.125vw; */
+    gap: 5.34vw;
+    position: relative;
+    background: url(../../images/realizeBlock/realizeBlock_desktop/realizeBlockDesktop_background-img.png);
+    background-size: cover;
+}
+
+.realizeBlock__container::before {
+    content: "";
+    position: absolute;
+    background-color: #000000BF;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    min-height: 100%;
+    width: 100%;
+}
+
+.realizeBlock__info {
+    z-index: 1;
+    /* margin-top: 137.47px; */
+    /* margin-bottom: 97.53px; */
+    /* margin-right: 13.125vw; */
+    min-width: 2.07vw;
+}
+
+.realizeBlock__heading {
+    margin-bottom: 47px;
+    line-height: 37.42px;
+}
+
+.realizeBlock__list {
+    list-style: none;
+    min-height: 516px;
+    display: block;
+}
+
+.realizeBlock__item {
+    font: 400 20px/38.19px "NunitoSans";
+    color: #FFFFFF;
+    margin-bottom: 25px;
+    display: block;
+    height: 24px;
+}
+
+.realizeBlock__item:hover {
+    color: #E3B873;
+    text-decoration: underline;
+    text-underline-offset: 1.17px;
+}
+
+.realizeBlock__content {
+    display: flex;
+    gap: 2.98vw;
+    z-index: 1;
+    min-height: 1017.86px;
+    margin-top: -246px;
+}
+
+.realizeBlock__img {
+    min-width: 24.58vw;
+}
+
+.realizeBlock__imgContainer {
+    display: inline-block;
+    min-width: 24.58vw;
+    cursor: pointer;
+}
+
+.realizeBlock__contentCol1 .realizeBlock__imgContainer:first-child {
+    background: url(../../images/realizeBlock/realizeBlock_desktop/realizeBlockDesktop-img1.png);
+    margin-top: 74.38px;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    min-height: 556.86px;
+    margin-bottom: 39.12px;
+}
+
+.realizeBlock__contentCol1 .realizeBlock__imgContainer:last-child {
+    background: url(../../images/realizeBlock/realizeBlock_desktop/realizeBlockDesktop-img2.png);
+    min-height: 349.47px;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+}
+
+.realizeBlock__contentCol2 .realizeBlock__imgContainer:first-child {
+    background: url(../../images/realizeBlock/realizeBlock_desktop/realizeBlockDesktop-img3.png);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    min-height: 275px;
+    position: relative;
+    margin-bottom: 37px;
+}
+
+.realizeBlock__contentCol2 .realizeBlock__imgContainer:last-child {
+    background: url(../../images/realizeBlock/realizeBlock_desktop/realizeBlockDesktop-img4.png);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    min-height: 625.23px;
+    margin-bottom: 81px;
+}

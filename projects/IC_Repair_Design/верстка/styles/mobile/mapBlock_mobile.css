@@ -1,0 +1,53 @@
+.mapBlock {
+    background-color: #000000;
+}
+
+.mapBlock__container {
+    display: flex;
+    flex-direction: column;
+    padding: 46px 4.52vw 49px 4.78vw;
+}
+
+.mapBlock__heading {
+    order: 2;
+    color: #FFFFFF;
+    text-align: center;
+    color: #E3B873;
+    line-height: 24.95px;
+    font-size: 18px;
+    margin-bottom: 23.65px;
+}
+
+.mapBlock__socialIcons {
+    order: 3;
+    display: flex;
+    justify-content: center;
+    gap: 5.57vw;
+}
+
+.mapBlock__mailIcon,
+.mapBlock__instagramIcon {
+    min-width: 39px;
+    min-height: 39px;
+    background-color: #E3B873;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mapBlock__mailIcon:hover,
+.mapBlock__instagramIcon:hover {
+    transform: scale(1.2);
+    opacity: .7;
+    transition: 300ms;
+}
+
+.mapBlock__map-container {
+    order: 1;
+    background: url(../../images/mapBlock/mapBlock_mobile/mapBlock-map-img.png);
+    min-width: 340px;
+    min-height: 255px;
+    margin-bottom: 41.79px;
+}

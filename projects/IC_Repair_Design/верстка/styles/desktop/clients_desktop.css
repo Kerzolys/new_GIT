@@ -1,0 +1,147 @@
+.clients {
+    min-height: 642.04px;
+    margin: 69.14px 7.01vw 131.95px 7.15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clients__heading {
+    line-height: 27.72px;
+    margin-bottom: 13.22px;
+}
+
+.clients__icon {
+    position: relative;
+    margin-bottom: 24.16px;
+}
+
+.clients__icon::before {
+    content: "";
+    position: absolute;
+    min-width: 32px;
+    height: 1.54px;
+    background-color: #E3B873;
+    top: 47.24%;
+    left: -2.78vw;
+}
+
+.clients__icon::after {
+    content: "";
+    position: absolute;
+    min-width: 32px;
+    height: 1.54px;
+    background-color: #E3B873;
+    top: 47.24%;
+    right: -2.78vw;
+}
+
+.clients__text {
+    text-align: center;
+    width: 27.08vw;
+    margin-bottom: 39px;
+}
+
+.clients__clientsCards {
+    display: flex;
+    gap: 54px;
+}
+
+.clients__item {
+    width: 26.11vw;
+    display: flex;
+    flex-direction: column;
+    height: 428px;
+    position: relative;
+    box-shadow: 0 10px 50px #0000000A;
+    padding-right: 2.21vw;
+}
+
+.clients__person,
+.clients__description {
+    margin-left: 1.38vw;
+}
+
+.clients__person {
+    display: flex;
+    align-items: center;
+}
+
+.clients__photo {
+    min-width: 76px;
+    min-height: 76px;
+    border-radius: 50%;
+    margin-right: 1.59vw;
+}
+
+.clients__item:first-child .clients__photo{
+    background: url(../../images/clients/clients1.png);
+    background-size: cover;
+}
+
+.clients__item:nth-child(2n+2) .clients__photo{
+    background: url(../../images/clients/clients2.png);
+    background-size: cover;
+}
+
+.clients__item:last-child .clients__photo{
+    background: url(../../images/clients/clients3.png);
+    background-size: cover;
+}
+
+.clients__person {
+    margin-bottom: 22px;
+}
+
+.clients__name {
+    font-family: "YesevaOne", sans-serif;
+    line-height: 22.87px;
+    color: #181818;
+}
+
+.clients__description {
+    font-size: 13px;
+    line-height: 23.4px;
+    color: #959595;
+}
+
+.clients__summary {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    background-color: #E3B873;
+    min-width: 20.39vw;
+    min-height: 54px;
+    bottom: -27px;
+}
+
+.clients__measurement,
+.clients__term {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.38vw;
+}
+
+.clients__measurement__info,
+.clients__termInfo {
+    font: 400 17px/23.56px "YesevaOne";
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.clients__measurement__info {
+    position: relative;
+}
+
+.clients__measurement__info::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 54.03px;
+    width: 0.75px;
+    top: -15px;
+    /* right: -24%; */
+    right: -0.874vw;
+}

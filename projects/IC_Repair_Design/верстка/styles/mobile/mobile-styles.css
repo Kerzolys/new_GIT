@@ -1,0 +1,61 @@
+@import url(../styles.css);
+@import url(./header_mobile.css);
+@import url(./hero_mobile.css);
+@import url(./worksBlock_mobile.css);
+@import url(./controlBlock.css);
+@import url(./typesBlock.css);
+@import url(./realizeBlock.css);
+@import url(./questionBlock.css);
+@import url(./mapBlock_mobile.css);
+body {
+    min-width: 375px;
+    margin: 0 auto;
+    max-width: 767px;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 23px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 15px;
+}
+
+button {
+    min-height: 51px;
+    min-width: 340px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* label {
+    color: #FFFFFF80;
+    line-height: 21.28px;
+} */
+
+.typesBlock__summary {
+    line-height: 20.79px;
+    font-size: 15px;
+}
+
+.clients {
+    display: none;
+}
+
+
+.requesBlock {
+    display: none;
+}
+
+.footer {
+    display: none;
+}

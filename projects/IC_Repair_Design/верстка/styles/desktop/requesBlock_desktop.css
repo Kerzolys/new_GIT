@@ -1,0 +1,137 @@
+.requesBlock {
+    display: flex;
+    gap: 9.09vw;
+    padding: 117.14px 6.94vw 129.56px 17.29vw;
+    position: relative;
+}
+
+.requesBlock::before {
+    content: "";
+    position: absolute;
+    background: url(../../images/requestBlock/requestBlock-img.png);
+    background-size: cover;
+    min-width: 48.82vw;
+    min-height: 645px;
+    top: 0;
+    right: 51.18vw;
+    z-index: -1;
+}
+
+.requestBlock__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* gap: 102.03px; */
+    height: 473.62px;
+}
+
+.requestBlock__infoItem {
+    display: flex;
+    gap: 1.11vw;
+    align-items: center;
+    min-width: 26.028vw;
+    min-height: 42px;
+    margin-bottom: 102.03px;
+    box-sizing: border-box;
+}
+
+.requestBlock__numberContainer {
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 41.76px;
+    min-height: 41.76px;
+    background-color: #E3B873;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0px 5px 15px #E3B87326;
+}
+
+.requestBlock__number {
+    font: 400 18px/24.95px "YesevaOne";
+    color: #FFFFFF;
+}
+
+.requestBlock__text {
+    font-size: 14px;
+    line-height: 19.1px;
+}
+
+.requestBlock__request {
+    display: flex;
+    flex-direction: column;
+    gap: 38.44px;
+}
+
+.requestBlock__requestContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #131313;
+    box-shadow: 0 30px 30px #0000000D;
+    min-height: 509px;
+    min-width: 35.13vw;
+    padding: 29px 49px 28px 49px;
+}
+
+.requestBlock__heading {
+    line-height: 25.78px;
+    font-family: "NunitoSans", sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-transform: none;
+    margin-left: 3.81vw;
+    margin-right: 3.88vw;
+    margin-bottom: 39px;
+    text-align: center;
+}
+
+.requestBlock__inputsArea {
+    display: flex;
+    flex-direction: column;
+}
+
+.requestBlock__input {
+    margin-bottom: 48px;
+}
+
+.requestBlock__input:last-child {
+    margin-bottom: 16px;
+}
+
+.requestBlock__dataCheck {
+    margin-bottom: 39px;
+}
+
+.requestBlock__btn {
+    align-self: end;
+    min-width: 14.79vw;
+}
+
+.requestBlock__iconArea {
+    display: flex;
+    gap: 1.736vw;
+    align-items: center;
+    min-width: 30.62vw;
+    padding-left: 2.25vw;
+    padding-right: 2.25vw;
+}
+
+.requestBlock__icon {
+    height: 72px;
+    width: 72px;
+    background-color: #E3B873;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px #EDC07833;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.requestBlock__text_color {
+    font-size: 18px;
+    line-height: 25.78px;
+    color: #E3B873;
+    width: 15.76vw;
+}

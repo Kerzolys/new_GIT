@@ -1,0 +1,39 @@
+@import url(../styles.css);
+@import url(./header_desktop.css);
+@import url(./hero_desktop.css);
+@import url(./worksBlock_desktop.css);
+@import url(./controlBlock__desktop.css);
+@import url(./typesBlock.css);
+@import url(./requesBlock_desktop.css);
+@import url(./realizeBlock_desktop.css);
+@import url(./clients_desktop.css);
+@import url(./questionBlock_desktop.css);
+@import url(./mapBlock_desktop.css);
+@import url(./footer_desktop.css);
+
+body {
+    margin: 0 auto;
+    min-width: 1440px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 27px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+button {
+    min-height: 53px;
+    font-size: 13px;
+}
+

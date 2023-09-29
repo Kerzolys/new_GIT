@@ -1,0 +1,175 @@
+/* доделать блок: позиционирование, и inputs block */
+
+.controlBlock {
+    position: relative;
+    margin-bottom: 147.85px;
+}
+
+.controlBlock__container {
+    margin-top: -313.27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 21.66vw;
+    padding-right: 21.59vw;
+}
+
+
+.controlBlock__heading {
+    line-height: 27.72px;
+    margin-bottom: 12.79px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.controlBlock__icon {
+    margin-bottom: 31.29px;
+    position: relative;
+}
+
+.controlBlock__icon::before {
+    content: "";
+    width: 32px;
+    height: 1.53px;
+    background-color: #E3B873;
+    position: absolute;
+    top: 13.23px;
+    left: -42.24px;
+}
+
+.controlBlock__icon::after {
+    content: "";
+    width: 32px;
+    height: 1.53px;
+    background-color: #E3B873;
+    position: absolute;
+    top: 13.23px;
+    right: -42.24px;
+}
+
+.controlBlock__videoBlock {
+    position: relative;
+    margin-bottom: 98.5px;
+    min-width: 56.73vw;
+    min-height: 434px;
+}
+
+.controlBlock__videoBlock::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: #000000CC;
+    z-index: 1;
+}
+
+.controlBlock__video {
+    background: url(../../images/onlineControl/onlineControl_desktop/onlineControlDesktop-img.png);
+    background-size: cover;
+    min-width: 100%;
+    min-height: 434px;
+    position: relative;
+}
+
+.controlBlock__video::before {
+    content: url(../../images/onlineControl/onlineControl_desktop/onlineControlDesktop-playBtn-img.svg);
+    min-width: 85px;
+    min-height: 85px;
+    background-color: #E3B873;
+    border-radius: 50%;
+    position: absolute;
+    top: 40.2%;
+    left: 44.79%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.controlBlock__videoBlock::after {
+    content: "";
+    position: absolute;
+    min-width: 55px;
+    min-height: 1.54px;
+    background-color: #E3B873;
+    bottom: -62.5px;
+    left: 46,63%;
+}
+
+.controlBlock__text {
+    font-style: 18px;
+    line-height: 36.83px;
+    text-align: center;
+    margin-bottom: 91.5px;
+}
+
+.contolBlock__inputsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "name phone btn" "check check check";
+}
+
+.controlBlock__inputsBlock {
+    display: flex;
+}
+
+.controlBlock__inputName {
+    grid-area: name;
+    margin-right: 4.02vw;
+}
+
+.controlBlock__inputPhone {
+    grid-area: phone;
+}
+
+.controlBlock__inputName,
+.controlBlock__inputPhone {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-bottom: 26.54px;
+    width: 16.04vw;
+}
+
+.controlBlock__inputsBlock label {
+    color: #36363680;
+}
+
+.controlBlock__inputsBlock .inputText {
+    color: #363636;
+    border-bottom: 1px solid #3636364D;
+}
+
+.controlBlock__inputsBlock input {
+    min-width: 16.18vw;
+    margin-right: 4.02vw;
+}
+
+.controlBlock__btn {
+    grid-area: btn;
+    min-width: 13.88vw;
+    margin-left: 3.5vw;
+    margin-bottom: 33.24px;
+}
+
+.controlBlock .dataCheck {
+    grid-area: check;
+    justify-self: center;
+}
+
+.controlBlock__dataCheck .controlBlock__checkboxLabel {
+    color: #181818;
+}
+
+.controlBlock__btn:hover {
+    background-color: transparent;
+    color: #181818;
+    transition: 300ms;
+    border: 1px solid #181818;
+}
+

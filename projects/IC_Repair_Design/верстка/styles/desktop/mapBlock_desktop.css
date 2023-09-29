@@ -1,0 +1,60 @@
+.mapBlock {
+    /* height: 731.24px; */
+    min-height: 953.9px;
+}
+
+.mapBlock__container {
+    /* min-height: 953.9px; */
+    /* position: absolute; */
+    /* top: -218.66px; */
+    margin-top: -218.66px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(../../images/mapBlock/mapBlock_desktop/mapBlockDesktop-background-img.png);
+    position: relative;
+    padding: 274.67px 18.05vw 65.93px 17.7vw;
+    z-index: -1;
+}
+
+.mapBlock__container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #181818E5;
+    z-index: -2;
+}
+
+.mapBlock__heading {
+    color: #E3B873;
+    line-height: 27.72px;
+    text-align: center;
+    margin-bottom: 26px;
+    width: 38.61vw;
+}
+
+.mapBlock__socialIcons {
+    display: flex;
+    gap: 1.04vw;
+}
+
+.mapBlock__mailIcon,
+.mapBlock__instagramIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    background-color: #E3B873;
+    margin-bottom: 43.29px;
+    border-radius: 50%;
+}
+
+.mapBlock__map-container {
+    background: url(../../images/mapBlock/mapBlock_desktop/mapBlockDesktop-map-img.png);
+    background-size: cover;    
+    min-width: 64.23vw;
+    min-height: 465px;
+}

@@ -1,0 +1,79 @@
+.questionBlock {
+    padding-left: 20.04vw;
+    padding-right: 18.63vw;
+    min-height: 222.66px;
+    position: relative;
+    z-index: 1;
+}
+
+.questionBlock::before {
+    content: url(../../images/questionBlock/questionBlock-background-img.png);
+    position: absolute;
+    top: -536.67px;
+    left: 0;
+    transform: scaleX(-1);
+    z-index: -1;
+}
+
+.questionBlock::after {
+    content: url(../../images/questionBlock/questionBlock-background-img.png);
+    position: absolute;
+    top: -536.67px;
+    right: 0;
+    z-index: -1;
+}
+
+.questionBlock__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #181818;
+    min-width: 61.31vw;
+    min-height: 445.32px;
+    padding: 34.4px 12.6vw;
+    /* z-index: 2; */
+    /* position: relative; */
+}
+
+.questionBlock__heading {
+    line-height: 27.72px;
+    color: #FFFFFF;
+    margin-bottom: 45.8px;
+}
+
+.questionBlock__inputsArea {
+    display: grid;
+    grid-template-columns: repeat(2, 16.04vw);
+    grid-template-rows: 45px;
+    grid-template-areas: "name phone" "question question";
+    gap: 4.02vw 48.76px;
+    height: 138.8px;
+    margin-bottom: 46.46px;
+}
+
+.questionBlock__inputBlock {
+    display: flex;
+    flex-direction: column;
+}
+
+.questionBlock__inputBlock:last-child {
+    grid-area: question;
+    min-width: 35.89vw;
+}
+
+.questionBlock__dataCheck {
+    margin-bottom: 50.45px;
+}
+
+.questionBlock__btn {
+    min-width: 13.88vw;
+    line-height: 26.6px;
+    
+}
+
+.questionBlock__btn:hover {
+    background-color: transparent;
+    transition: 300ms;
+}
+
+
