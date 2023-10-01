@@ -34,7 +34,6 @@
 
 .hero__heading_color {
     color: #E3B873;
-
 }
 
 .hero__text {
@@ -54,10 +53,10 @@
     font-size: 11px;
     line-height: 15px;
     min-width: 338px;
+    transition: all 300ms ease;
 }
 
 .hero__btn:hover {
     background-color: transparent;
     border: 1px solid #FFFFFF;
-    transition: 300ms;
 }

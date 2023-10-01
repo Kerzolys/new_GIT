@@ -29,6 +29,7 @@
 
 .header__phone {
     color: #FFFFFF;
+    -webkit-text-fill-color: #FFFFFF;
 }
 
 .header__nav,
