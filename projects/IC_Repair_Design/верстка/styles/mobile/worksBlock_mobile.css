@@ -56,19 +56,17 @@
     align-items: center;
     cursor: pointer;
     opacity: 0;
-    transition: opacity 300ms ease,
-    transform 300ms ease;
+    transition: all 300ms ease;
 }
 
 .worksBlock__slider-content::before {
     left: 14px;
 }
 
-
-
 .worksBlock__slider-content::after {
     right: 14px;
     transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
 }
 
 .worksBlock__slider-content:hover::before,
@@ -79,6 +77,7 @@
 .worksBlock__slider-content:active::before,
 .worksBlock__slider-content:active::after {
     transform: scale(1.2);
+    -webkit-transform: scale(1.2);
 }
 
 .worksBlock__table {

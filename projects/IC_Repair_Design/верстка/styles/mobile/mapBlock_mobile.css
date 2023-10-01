@@ -41,6 +41,7 @@
 .mapBlock__mailIcon:hover,
 .mapBlock__instagramIcon:hover {
     transform: scale(1.2);
+    -webkit-transform: scale(1.2);
     opacity: .7;
 }
 
