@@ -107,9 +107,11 @@
 
 .clients__summary {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     position: absolute;
+    gap: 1.18vw;
+    padding-left: 1.319vw;
+    padding-right: 1.736vw;
     background-color: #E3B873;
     min-width: 20.39vw;
     min-height: 54px;
@@ -119,7 +121,6 @@
 .clients__measurement,
 .clients__term {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     gap: 1.38vw;
 }
@@ -134,14 +135,9 @@
 .clients__measurement__info {
     position: relative;
 }
-
-.clients__measurement__info::after {
-    content: "";
-    position: absolute;
+.clients__stroke {
     background-color: #fff;
     height: 54.03px;
     width: 0.75px;
-    top: -15px;
-    /* right: -24%; */
-    right: -0.874vw;
 }
+

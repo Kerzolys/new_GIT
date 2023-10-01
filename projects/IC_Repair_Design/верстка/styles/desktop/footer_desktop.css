@@ -16,6 +16,7 @@
 .footer__phone {
     cursor: pointer;
     color: #E3B873;
+    transition: text-decoration 300ms ease;
 }
 
 .footer__logo:hover,
@@ -34,13 +35,17 @@
     gap: 3.32vw;
 }
 
+.footer__item {
+    list-style-type: none;
+}
+
 .footer__a {
     color: #FFFFFF;
+    transition: color 300ms;
 }
 
 .footer__a:hover {
     color: #E3B873;
-    transition: 300ms;
 }
 
 .footer__btn {
@@ -50,10 +55,10 @@
     font-size: 11px;
     line-height: 15px;
     margin-left: 5.41vw;
+    transition: all 300ms ease;
 }
 
 .footer__btn:hover {
     background-color: transparent;
     border: 1px solid #FFFFFF;
-    transition: 300ms;
 }

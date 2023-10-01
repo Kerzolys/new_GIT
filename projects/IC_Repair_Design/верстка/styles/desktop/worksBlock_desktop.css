@@ -1,4 +1,3 @@
-/* доделать GRID */
 
 .worksBlock {
     min-height: 1074px;
@@ -9,7 +8,6 @@
 
 .worksBlock__container {
     display: grid;
-    /* grid-template-columns: 30.69vw 47.15vw; */
     grid-template-columns: repeat(2 auto);
     grid-template-rows: auto;
     grid-column-gap: 3.47vw;
@@ -32,14 +30,11 @@
     font-size: 14px;
     line-height: 26.73px;
     width: 30.69vw;
-    /* margin-bottom: 42px; */
-    /* padding-right: 3.47vw; */
 }
 
 .worksBlock__table {
     grid-column: 1;
     grid-row: 3;
-    /* grid-row-gap: 79.64px; */
 }
 
 .worksBlock__table th {
@@ -73,8 +68,8 @@
     grid-column: 1;
     grid-row: 4;
     display: flex;
+    align-items: center;
     gap: 29.5px;
-    margin-left: 45.51px;
     align-self: end;
 }
 
@@ -90,27 +85,28 @@
     background-color: #FFFFFF4D;
     cursor: pointer;
     position: relative;
-}
-
-.worksBlock__dot:first-child:before {
-    content: url(../../images/worksBlock/worksBlock_desktop/worksBlockDesktop-arrow-img.svg);
-    position: absolute;
-    top: -2.785px;
-    left: -68.56px;
-    cursor: pointer;
-}
-
-.worksBlock__dot:last-child:after {
-    content: url(../../images/worksBlock/worksBlock_desktop/worksBlockDesktop-arrow-img.svg);
-    position: absolute;
-    top: -2.785px;
-    right: -68.56px;
-    transform: rotate(180deg);
-    cursor: pointer;
+    transition: all 300ms ease;
 }
 
 .worksBlock__dot:hover {
     background-color: #FFFFFF;
+    transform: scale(1.2);
+}
+
+.worksBlock__arrow-left,
+.worksBlock__arrow-right {
+    cursor: pointer;
+    transition: transform 300ms;
+}
+
+
+.worksBlock__arrow-left:hover,
+.worksBlock__arrow-right:hover {
+    transform: scale(1.2);
+}
+
+.worksBlock__arrow-right svg{
+    transform: rotate(180deg);
 }
 
 .worksBlock__content {
@@ -124,7 +120,6 @@
 .worksBlock__nav{
     grid-column: 2;
     grid-row: 1;
-    /* margin-bottom: 45.36px; */
 }
 
 .worksBlock__list {
@@ -140,6 +135,7 @@
     line-height: 19.4px;
     text-transform: uppercase;
     list-style-type: none;
+    cursor: pointer;
 }
 
 .worksBlock__item:hover {
@@ -147,8 +143,6 @@
     text-decoration: underline;
     text-underline-offset: 6.68px;
 }
-
-
 
 .worksBlock__slider-content {
     grid-column: 2;

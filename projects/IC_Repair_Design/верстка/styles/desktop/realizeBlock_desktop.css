@@ -1,5 +1,4 @@
 .realizeBlock {
-    /* min-height: 1017.86px; */
     min-height: 70.625%;
     padding-top: 112.53px;
     padding-bottom: 41.33px;
@@ -12,7 +11,6 @@
     padding-bottom: 97.53px;
     padding-top: 137.47px;
     display: flex;
-    /* gap: 13.125vw; */
     gap: 5.34vw;
     position: relative;
     background: url(../../images/realizeBlock/realizeBlock_desktop/realizeBlockDesktop_background-img.png);
@@ -32,9 +30,6 @@
 
 .realizeBlock__info {
     z-index: 1;
-    /* margin-top: 137.47px; */
-    /* margin-bottom: 97.53px; */
-    /* margin-right: 13.125vw; */
     min-width: 2.07vw;
 }
 
@@ -55,6 +50,7 @@
     margin-bottom: 25px;
     display: block;
     height: 24px;
+    cursor: pointer;
 }
 
 .realizeBlock__item:hover {
@@ -79,13 +75,17 @@
     display: inline-block;
     min-width: 24.58vw;
     cursor: pointer;
+    transition: transform 400ms ease;
+}
+
+.realizeBlock__imgContainer:hover {
+    transform: scale(0.95);
 }
 
 .realizeBlock__contentCol1 .realizeBlock__imgContainer:first-child {
     background: url(../../images/realizeBlock/realizeBlock_desktop/realizeBlockDesktop-img1.png);
     margin-top: 74.38px;
     background-size: cover;
-    /* background-repeat: no-repeat; */
     min-height: 556.86px;
     margin-bottom: 39.12px;
 }
@@ -94,13 +94,11 @@
     background: url(../../images/realizeBlock/realizeBlock_desktop/realizeBlockDesktop-img2.png);
     min-height: 349.47px;
     background-size: cover;
-    /* background-repeat: no-repeat; */
 }
 
 .realizeBlock__contentCol2 .realizeBlock__imgContainer:first-child {
     background: url(../../images/realizeBlock/realizeBlock_desktop/realizeBlockDesktop-img3.png);
     background-size: cover;
-    /* background-repeat: no-repeat; */
     min-height: 275px;
     position: relative;
     margin-bottom: 37px;
@@ -109,7 +107,6 @@
 .realizeBlock__contentCol2 .realizeBlock__imgContainer:last-child {
     background: url(../../images/realizeBlock/realizeBlock_desktop/realizeBlockDesktop-img4.png);
     background-size: cover;
-    /* background-repeat: no-repeat; */
     min-height: 625.23px;
     margin-bottom: 81px;
 }

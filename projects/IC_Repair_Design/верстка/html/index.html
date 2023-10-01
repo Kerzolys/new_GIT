@@ -64,13 +64,24 @@
                     </table>
                 </div>
                 <div class="worksBlock__sliderNav">
-                    <div class="worksBlock__arrow-left"></div>
+                    <div class="worksBlock__arrow-left">
+                        <svg width="42" height="14" viewBox="0 0 42 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.63807 13.2761L2.29917e-05 6.63808L6.63807 3.80641e-05L7.58563 0.947606L1.89516 6.63808L7.58563 12.3286L6.63807 13.2761Z" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.947579 5.96828L41.4556 5.96829L41.4556 7.30835L0.947578 7.30834L0.947579 5.96828Z" fill="white"/>
+                            </svg>                            
+                    </div>
                     <div class="worksBlock__dots">
                         <div class="worksBlock__dot"></div>
                         <div class="worksBlock__dot"></div>
                         <div class="worksBlock__dot"></div>
                     </div>
-                    <div class="worksBlock__arrow-right"></div>
+                    <div class="worksBlock__arrow-right">
+                        <svg width="42" height="14" viewBox="0 0 42 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.63807 13.2761L2.29917e-05 6.63808L6.63807 3.80641e-05L7.58563 0.947606L1.89516 6.63808L7.58563 12.3286L6.63807 13.2761Z" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.947579 5.96828L41.4556 5.96829L41.4556 7.30835L0.947578 7.30834L0.947579 5.96828Z" fill="white"/>
+                            </svg>
+                            
+                    </div>
                 </div>
                 <div class="worksBlock__content">
                     <nav class="worksBlock__nav">
@@ -113,9 +124,8 @@
                     <button type="button" class="controlBlock__btn">Submit</button>
                     <div class="dataCheck controlBlock__dataCheck">
                         <label for="checkbox">
-                            <input type="checkbox" id="checkbox" class="checkbox controlBlock__checkbox" value="">
-                            <span class="checkbox_fake controlBlock__checkbox_fake"></span>
-                            <span class="checkboxLabel controlBlock__checkboxLabel">I agree to the processing of personal data</span>           
+                            <input type="checkbox" id="checkbox" class="checkbox controlBlock__checkbox">
+                            <span class="checkboxLabel controlBlock__checkboxLabel">I agree to the processing of personal data</span>
                         </label>
                     </div>
                 </div>   
@@ -222,11 +232,10 @@
                         <input type="text" class="inputText requestBlock__input" id="email" value="Your email">
                     </div>
                     <div class="dataCheck requestBlock__dataCheck">
-                        <label for="checkbox">
-                            <input type="checkbox" id="checkbox" class="checkbox requestBlock__checkbox" value="">
-                            <span class="checkbox_fake requestBlock__checkbox_fake"></span>
-                            <span class="checkboxLabel requestBlock__checkboxLabel">I agree to the processing of personal data</span>           
-                        </label>                    
+                        <label for="requestCheckbox">
+                            <input type="checkbox" id="requestCheckbox" class="checkbox requestlBlock__checkbox">
+                            <span class="checkboxLabel requestlBlock__checkboxLabel">I agree to the processing of personal data</span>
+                        </label>                  
                     </div>
                     <button class="requestBlock__btn">Call the measurer</button>
                 </div>
@@ -312,6 +321,7 @@
                                     </svg>
                             </div>
                             <p class="clients__measurement__info">40 m2</p>
+                            <div class="clients__stroke"></div>
                         </div>
                         <div class="clients__term">
                             <div class="clients__termIcon">
@@ -329,8 +339,7 @@
                                     <path d="M5.4408 22.5469C5.58775 22.5469 5.7347 22.4864 5.84209 22.3875C5.94382 22.283 6.00599 22.14 6.00599 21.997C6.00599 21.8535 5.94382 21.7105 5.84209 21.6121C5.63297 21.4031 5.24864 21.4031 5.03952 21.6066C4.93778 21.7105 4.87561 21.8535 4.87561 21.997C4.87561 22.14 4.93778 22.283 5.03952 22.3875C5.1469 22.4864 5.2882 22.5469 5.4408 22.5469Z" fill="white"/>
                                     <path d="M28.0485 18.1475C28.1954 18.1475 28.3424 18.0919 28.4498 17.988C28.5571 17.8835 28.6137 17.7405 28.6137 17.5975C28.6137 17.454 28.5571 17.311 28.4498 17.2071C28.235 17.0036 27.8563 17.0036 27.6472 17.2071C27.5454 17.311 27.4833 17.454 27.4833 17.5975C27.4833 17.7405 27.5454 17.8835 27.6472 17.988C27.7546 18.0919 27.9015 18.1475 28.0485 18.1475Z" fill="white"/>
                                     <path d="M19.5706 25.8459H5.4408C5.12882 25.8459 4.87561 26.0917 4.87561 26.3958C4.87561 26.6999 5.12882 26.9457 5.4408 26.9457H19.5706C19.8826 26.9457 20.1358 26.6999 20.1358 26.3958C20.1358 26.0917 19.8826 25.8459 19.5706 25.8459Z" fill="white"/>
-                                    </svg>
-                                    
+                                    </svg>                                  
                             </div>
                             <p class="clients__termInfo">48 DAYS</p>
                         </div>
@@ -361,6 +370,7 @@
                                     </svg>
                             </div>
                             <p class="clients__measurement__info">90 м2</p>
+                            <div class="clients__stroke"></div>
                         </div>
                         <div class="clients__term">
                             <div class="clients__termIcon">
@@ -409,6 +419,7 @@
                                     </svg>                                                         
                             </div>
                             <p class="clients__measurement__info">56 м2</p>
+                            <div class="clients__stroke"></div>
                         </div>
                         <div class="clients__term">
                             <div class="clients__termIcon">
@@ -452,11 +463,10 @@
                     </div>
                 </div>
                 <div class="dataCheck questionBlock__dataCheck">
-                    <label for="checkbox">
-                        <input type="checkbox" id="checkbox" class="checkbox questionBlock__checkbox" value="">
-                        <span class="checkbox_fake questionBlock__checkbox_fake"></span>
-                        <span class="checkboxLabel questionBlock__checkboxLabel">I agree to the processing of personal data</span>           
-                    </label>                
+                    <label for="questionCheckbox">
+                        <input type="checkbox" id="questionCheckbox" class="checkbox questionlBlock__checkbox">
+                        <span class="checkboxLabel questionlBlock__checkboxLabel">I agree to the processing of personal data</span>
+                    </label>                 
                 </div>
                 <button class="questionBlock__btn">submit</button>
             </div>

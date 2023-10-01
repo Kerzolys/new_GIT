@@ -72,6 +72,7 @@ button {
     border-bottom: 1px solid #FFFFFF26;
     background-color: transparent;
     padding-bottom: 8px;
+    outline: none;
 }
 
 label {
@@ -81,40 +82,6 @@ label {
     margin-bottom: 7px;
 }
 
-.dataCheck label{
-    display: inline-flex;
-    gap: 8.62px;
-    align-items: baseline;
-}
-
-.checkbox {
-    display: none;
-}
-
-.checkboxLabel {
-    cursor: pointer;
-}
-
-.checkbox_fake {
-    display: inline-flex;
-    width: 18px;
-    height: 18px;
-    border-radius: 1px;
-    justify-content: center;
-    align-items: center;
-    background-color: #E3B873;
-    color: #FFFFFF;
-}
-
-.checkbox_fake::before {
-    content: "\2714";
-    opacity: 0;
-    transition: .2s;
-}
-
-.checkbox:checked + .checkbox_fake::before {
-    opacity: 1;
-}
 
 .typesBlock__summary {
     color: #FFFFFF;
@@ -122,5 +89,73 @@ label {
     text-align: center;
     text-transform: uppercase;
     background-color: #E3B873;
+} 
+
+.checkbox:checked,
+.checkbox:not(:checked) {
+    display: none;
+    opacity: 0;
 }
 
+.checkbox:checked + .checkboxLabel,
+.checkbox:not(:checked) + .checkboxLabel {
+    display: inline-block;
+    position: relative;
+    padding-left: 26.62px;
+    cursor: pointer;
+}
+
+.checkbox:checked + .checkboxLabel::before,
+.checkbox:not(:checked) + .checkboxLabel::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 1px;
+    transition: background-color .3s ease;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+}
+
+.checkbox:checked + .checkboxLabel:hover::before,
+.checkbox:not(:checked) + .checkboxLabel:hover::before {
+    border-color: #E3B873;
+}
+
+.checkbox:checked + .checkboxLabel:before {
+    background-color: #E3B873;
+    border: 1px solid #E3B873;
+}
+
+.checkbox:not(:checked):active + .checkboxLabel::before {
+    background-color: #e3b873a7;
+}
+
+.checkbox:checked + .checkboxLabel::after,
+.checkbox:not(:checked) + .checkboxLabel::after {
+    content: "";
+    position: absolute;
+    inset: 4.54px;
+    width: 8.31px;
+    height: 5.71px;
+    border-radius: 1px;
+    border-left: 3.5px solid #FFFFFF;
+    border-bottom: 3.5px solid #FFFFFF;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    transition: all .3s ease;
+    background-color: #E3B873;
+}
+
+.checkbox:not(:checked) + .checkboxLabel::after {
+    opacity: 0;
+}
+
+.checkbox:checked + .checkboxLabel::after {
+    opacity: 1;
+}

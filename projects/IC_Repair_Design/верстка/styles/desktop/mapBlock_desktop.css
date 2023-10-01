@@ -1,12 +1,8 @@
 .mapBlock {
-    /* height: 731.24px; */
     min-height: 953.9px;
 }
 
 .mapBlock__container {
-    /* min-height: 953.9px; */
-    /* position: absolute; */
-    /* top: -218.66px; */
     margin-top: -218.66px;
     display: flex;
     flex-direction: column;
@@ -14,7 +10,7 @@
     background: url(../../images/mapBlock/mapBlock_desktop/mapBlockDesktop-background-img.png);
     position: relative;
     padding: 274.67px 18.05vw 65.93px 17.7vw;
-    z-index: -1;
+    z-index: 1;
 }
 
 .mapBlock__container::before {
@@ -24,7 +20,7 @@
     height: 100%;
     width: 100%;
     background-color: #181818E5;
-    z-index: -2;
+    z-index: -1;
 }
 
 .mapBlock__heading {
@@ -50,6 +46,13 @@
     background-color: #E3B873;
     margin-bottom: 43.29px;
     border-radius: 50%;
+    transition: transform 300ms ease;
+    cursor: pointer;
+}
+
+.mapBlock__mailIcon:hover,
+.mapBlock__instagramIcon:hover {
+    transform: scale(1.2)
 }
 
 .mapBlock__map-container {
