@@ -73,7 +73,6 @@
 .controlBlock__video {
     background: url(../../images/onlineControl/onlineControl_mobile/onlineControlMobile-img.png);
     background-size: cover;
-    /* min-width: 340px; */
     min-width: 100%;
     min-height: 207px;
     position: relative;
